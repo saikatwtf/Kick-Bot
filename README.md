@@ -62,6 +62,10 @@ A Telegram bot that automatically removes inactive users from groups based on th
 The bot requires the following permissions in Telegram groups:
 - Ban Users (to remove inactive members)
 
+## Developer
+
+Join our Telegram channel: [AnnihilusOP](https://t.me/AnnihilusOP)
+
 ## License
 
 See the [LICENSE](LICENSE) file for details.

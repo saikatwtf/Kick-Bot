@@ -16,7 +16,8 @@ async def start_command(client, message):
     await message.reply(
         "👋 **Welcome to Kick-Bot!**\n\n"
         "I can help you manage your group by removing inactive users.\n"
-        "Type /help to see available commands."
+        "Type /help to see available commands.\n\n"
+        "Join our channel: [AnnihilusOP](https://t.me/AnnihilusOP)"
     )
 
 async def help_command(client, message):
@@ -32,7 +33,8 @@ async def help_command(client, message):
         "• 10m - 10 minutes\n"
         "• 6h - 6 hours\n"
         "• 7d - 7 days\n\n"
-        "**Note:** The bot needs to be an admin with 'Ban Users' permission to work properly."
+        "**Note:** The bot needs to be an admin with 'Ban Users' permission to work properly.\n\n"
+        "**Join our channel:** [AnnihilusOP](https://t.me/AnnihilusOP)"
     )
 
 async def kick_inactive_command(client, message):
