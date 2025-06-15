@@ -1,0 +1,34 @@
+{
+  "name": "Kick-Bot",
+  "description": "A Telegram bot that automatically removes inactive users from groups",
+  "repository": "https://github.com/yourusername/Kick-Bot",
+  "keywords": ["python", "telegram", "bot", "pyrogram", "group-management"],
+  "env": {
+    "API_ID": {
+      "description": "Your Telegram API ID from my.telegram.org",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Your Telegram API Hash from my.telegram.org",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Your Bot Token from @BotFather",
+      "required": true
+    },
+    "MONGO_URI": {
+      "description": "MongoDB connection URI",
+      "required": true
+    },
+    "DB_NAME": {
+      "description": "MongoDB database name",
+      "value": "kickbot",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}

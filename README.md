@@ -44,6 +44,19 @@ A Telegram bot that automatically removes inactive users from groups based on th
    python main.py
    ```
 
+## Deploy to Heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+1. Click the Deploy to Heroku button
+2. Fill in the required environment variables:
+   - `API_ID`: Your Telegram API ID from my.telegram.org
+   - `API_HASH`: Your Telegram API Hash from my.telegram.org
+   - `BOT_TOKEN`: Your Bot Token from @BotFather
+   - `MONGO_URI`: MongoDB connection URI (you can use MongoDB Atlas for free tier)
+   - `DB_NAME`: MongoDB database name (default: kickbot)
+3. Click "Deploy App"
+
 ## Permissions
 
 The bot requires the following permissions in Telegram groups:
