@@ -37,8 +37,11 @@ async def help_command(client, message):
 
 async def kick_inactive_command(client, message):
     """Handle /kickinactive command"""
-    # Check if command is used in a group
-    if message.chat.type not in ["group", "supergroup"]:
+    # Debug log to help troubleshoot chat type issues
+    logger.info(f"Chat type: {message.chat.type}, Chat ID: {message.chat.id}, Chat title: {message.chat.title}")
+    
+    # Check if command is used in a group - use a more reliable method
+    if not message.chat or message.chat.id > 0:  # Positive IDs are private chats
         await message.reply("This command can only be used in groups.")
         return
 
